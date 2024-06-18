@@ -1,0 +1,63 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>397</x><y>55</y><w>231</w><h>99</h></coordinates><panel_attributes>Interfaz
+--
+
+--
++~Interfaz()
++double calcularSalario()
++void mostrarInformacion()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>397</x><y>220</y><w>231</w><h>165</h></coordinates><panel_attributes>Empleado
+--
+#double tarifaHora
+#string fechaContratacion
+#double salarioBase
+#string nombre
+--
++~Empleado()
++void mostrarInformacion()
++void setTarifaHora(double)
++Empleado(string, double, string)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>45</x><y>418</y><w>319</w><h>132</h></coordinates><panel_attributes>Disenador
+--
+- double ventasTotales
+- double porcentajeComision
+--
++string getNombre()
++ void mostrarInformacion()
++double calcularSalario()
++Disenador(string, double, string, double, double)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>386</x><y>473</y><w>264</w><h>121</h></coordinates><panel_attributes>Desarrollador
+--
+- int horasExtras
+--
++string getNombre()
++ void mostrarInformacion()
++double calcularSalario()
++Desarrollador (string, double, string, int)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>672</x><y>396</y><w>264</w><h>121</h></coordinates><panel_attributes>Gerente
+--
+- double bono
+--
++string getNombre()
++ void mostrarInformacion()
++double calcularSalario()
++Gerente (string, double, string, double)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>34</x><y>187</y><w>231</w><h>187</h></coordinates><panel_attributes>Departamento
+--
+- int contador
+- int capacidad
+- T** empleados
+--
++ void listarEmpleados()
++ T* buscarEmpleado(const string&amp;)
++ void eliminarEmpleado(int)
++ void agregarEmpleado(T*)
++ ~Departamento()
++ Departamento(int)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>573</x><y>374</y><w>121</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;90;80</additional_attributes></element><element><id>Relation</id><coordinates><x>353</x><y>374</y><w>110</w><h>121</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;80;40;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>507</x><y>374</y><w>33</w><h>121</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>507</x><y>143</y><w>33</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>254</x><y>286</y><w>165</w><h>44</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1..*
+m2=0..*</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element></diagram>
