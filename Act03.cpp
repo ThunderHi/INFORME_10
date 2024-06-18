@@ -88,11 +88,11 @@ public:
     //Método generico para asignar dias de entrega
     template <typename D>
     void calcularFechaEstimada(D diasTransito) {
-        cout << "La entrega " << id << " llegara en aproximadamente " << diasTransito << " dias a " << direccion << endl;
+        cout<<"La entrega "<<id<<" llegara en aproximadamente "<<diasTransito<<" dias a "<<direccion<<endl;
     }
     //Muestra detalles de entrega
     void mostrarEntrega() {
-        cout << "Entrega " << id << " a " << direccion << " programada para la fecha " << fecha << endl;
+        cout<<"Entrega "<<id<<" a "<<direccion<<" programada para la fecha "<<fecha<<endl;
     }
 };
 
@@ -126,7 +126,7 @@ public:
     }
     //calcula estado de tiempo
     void calcularTiempoEstimadoRuta(T velocidad) {
-        cout << "Tiempo estimado: " << ruta->calcularTiempoEstimado(velocidad) << " horas" << endl;
+        cout<<"Tiempo estimado: "<<ruta->calcularTiempoEstimado(velocidad)<<" horas"<<endl;
     }
 
     //Apunta a método de clase entrega para calcular fecha de entrega
