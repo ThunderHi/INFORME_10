@@ -29,7 +29,6 @@ class Ruta {
         Punto<T> origen;
         Punto<T> destino;
         T distancia;
-
     public:
         //Constructor de la clase
         Ruta(Punto<T> o, Punto<T> d) : origen(o), destino(d) {
